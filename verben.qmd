@@ -1,0 +1,311 @@
+---
+title: "Perfekt"
+format:
+  html:
+    theme: styles-verben.scss
+    self-contained: true
+    page-layout: full
+    toc: false
+execute:
+  echo: false
+---
+
+```{r}
+#| output: asis
+
+verbs <- read.csv("verben.csv", stringsAsFactors = FALSE)
+
+verb_to_json <- function(r) {
+  sprintf(paste0('{"infinitive":"%s","auxiliary":"%s","participle":"%s",',
+                 '"wrongAux":"%s","wrongP1":"%s","wrongP2":"%s",',
+                 '"beforeAux":"%s","beforeParticiple":"%s","afterParticiple":"%s"}'),
+          r[["infinitive"]], r[["auxiliary"]], r[["participle"]],
+          r[["wrong_aux"]], r[["wrong_p1"]], r[["wrong_p2"]],
+          r[["before_aux"]], r[["before_participle"]], r[["after_participle"]])}
+
+json_verbs <- paste0("[",
+                     paste(apply(verbs, 1, verb_to_json), collapse = ","),
+                     "]")
+
+cat(sprintf("<script>const VERBS = %s;</script>\n", json_verbs))
+```
+
+```{=html}
+
+<div class="screen" id="game-screen">
+
+  <div class="game-header">
+    <span class="game-title">Perfekt</span>
+    <span class="game-subtitle">Verben · Deutsch</span>
+  </div>
+
+  <div class="scorebar">
+    <div class="score-item">
+      <span class="sc-label">Richtig</span>
+      <span class="sc-val correct" id="val-correct">0</span>
+    </div>
+    <div class="score-divider"></div>
+    <div class="score-item">
+      <span class="sc-label">Streak 🔥</span>
+      <span class="sc-val streak"  id="val-streak">0</span>
+    </div>
+    <div class="score-divider"></div>
+    <div class="score-item">
+      <span class="sc-label">Falsch</span>
+      <span class="sc-val wrong"   id="val-wrong">0</span>
+    </div>
+  </div>
+
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progress-bar" style="width:0%"></div>
+  </div>
+
+  <div class="verb-card" id="verb-card">
+    <span class="verb-infinitive" id="verb-infinitive">…</span>
+
+    <div class="sentence-wrap" id="sentence-wrap">
+      <!-- Built dynamically by JS -->
+    </div>
+
+    <div class="correct-sentence" id="correct-sentence"></div>
+  </div>
+
+  <button class="next-btn" id="next-btn" onclick="nextVerb()">
+    weiter →
+  </button>
+
+</div>
+
+<div class="screen hidden" id="end-screen">
+
+  <p class="end-title">Fertig!</p>
+  <p class="end-sub">Perfekt gemeistert</p>
+
+  <span class="end-score" id="end-score">0</span>
+  <p class="end-total"    id="end-total">von 0 Verben</p>
+  <p class="end-msg"      id="end-msg"></p>
+
+  <div class="end-actions">
+    <button class="replay-btn" onclick="restartGame()">Nochmal spielen ↺</button>
+  </div>
+
+</div>
+
+<script>
+let deck     = [];
+let current  = null;
+let phase    = 'aux';
+let correct  = 0;
+let wrong    = 0;
+let streak   = 0;
+let total    = 0;
+let hadError = false;
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function show(id) {
+  ['game-screen', 'end-screen'].forEach(s =>
+    document.getElementById(s).classList.toggle('hidden', s !== id)
+  );
+}
+
+function updateScore() {
+  document.getElementById('val-correct').textContent = correct;
+  document.getElementById('val-wrong').textContent   = wrong;
+  document.getElementById('val-streak').textContent  = streak;
+}
+
+function updateProgress() {
+  const pct = VERBS.length ? (total / VERBS.length) * 100 : 0;
+  document.getElementById('progress-bar').style.width = pct + '%';
+}
+
+function buildSentence(verb) {
+  const wrap = document.getElementById('sentence-wrap');
+  wrap.innerHTML = '';
+
+  function textSpan(t) {
+    const s = document.createElement('span');
+    s.className   = 'sent-text';
+    s.textContent = t;
+    return s;
+  }
+
+  function choiceStack(options, type) {
+    const stack = document.createElement('div');
+    stack.className   = 'choice-stack';
+    stack.dataset.type = type;
+
+    options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className   = 'choice-btn';
+      btn.textContent = opt;
+      btn.dataset.value = opt;
+      btn.dataset.type  = type;
+      if (type === 'aux') {
+        btn.classList.add(
+          opt === 'haben' ? 'haben-style' : 'sein-style'
+        );
+        btn.onclick = () => guessAux(opt);
+      } else {
+        btn.onclick = () => guessParticiple(opt);
+      }
+      stack.appendChild(btn);
+    });
+
+    return stack;
+  }
+
+  const auxOpts = shuffle([verb.auxiliary, verb.wrongAux]);
+
+  const partOpts = shuffle([verb.participle, verb.wrongP1, verb.wrongP2]);
+
+  if (verb.beforeAux)        wrap.appendChild(textSpan(verb.beforeAux));
+  wrap.appendChild(choiceStack(auxOpts, 'aux'));
+  if (verb.beforeParticiple) wrap.appendChild(textSpan(verb.beforeParticiple));
+
+  const pStack = choiceStack(partOpts, 'participle');
+  pStack.querySelectorAll('button').forEach(b => { b.disabled = true; });
+  wrap.appendChild(pStack);
+
+  if (verb.afterParticiple)  wrap.appendChild(textSpan(verb.afterParticiple));
+}
+
+function guessAux(chosen) {
+  if (phase !== 'aux') return;
+
+  const wrap    = document.getElementById('sentence-wrap');
+  const auxBtns = [...wrap.querySelectorAll('.choice-btn[data-type="aux"]')];
+  const partBtns = [...wrap.querySelectorAll('.choice-btn[data-type="participle"]')];
+
+  auxBtns.forEach(b => { b.disabled = true; });
+
+  if (chosen === current.auxiliary) {
+    auxBtns.forEach(b => {
+      b.classList.add(b.dataset.value === chosen ? 'state-correct' : 'state-dim');
+    });
+    partBtns.forEach(b => { b.disabled = false; });
+    phase = 'participle';
+  } else {
+
+    hadError = true;
+    wrong++;
+    streak = 0;
+    auxBtns.forEach(b => {
+      if (b.dataset.value === chosen)          b.classList.add('state-wrong');
+      else if (b.dataset.value === current.auxiliary) b.classList.add('state-reveal');
+      else                                     b.classList.add('state-dim');
+    });
+    
+    setTimeout(() => {
+      partBtns.forEach(b => { b.disabled = false; });
+      phase = 'participle';
+    }, 800);
+    updateScore();
+    return;
+  }
+  updateScore();
+}
+
+function guessParticiple(chosen) {
+  if (phase !== 'participle') return;
+  phase = 'done';
+  total++;
+
+  const wrap     = document.getElementById('sentence-wrap');
+  const partBtns = [...wrap.querySelectorAll('.choice-btn[data-type="participle"]')];
+  const card     = document.getElementById('verb-card');
+  const corrSent = document.getElementById('correct-sentence');
+
+  partBtns.forEach(b => { b.disabled = true; });
+
+  if (chosen === current.participle) {
+    // Correct participle
+    partBtns.forEach(b => {
+      b.classList.add(b.dataset.value === chosen ? 'state-correct' : 'state-dim');
+    });
+
+    if (!hadError) {
+      // Perfect round
+      correct++;
+      streak++;
+    } else {
+      showCorrectSentence();
+    }
+  } else {
+    hadError = true;
+    wrong++;
+    streak = 0;
+    partBtns.forEach(b => {
+      if (b.dataset.value === chosen)             b.classList.add('state-wrong');
+      else if (b.dataset.value === current.participle) b.classList.add('state-reveal');
+      else                                        b.classList.add('state-dim');
+    });
+    card.classList.add('shake');
+    setTimeout(() => card.classList.remove('shake'), 450);
+    showCorrectSentence();
+  }
+
+  updateScore();
+  updateProgress();
+  document.getElementById('next-btn').classList.add('visible');
+}
+
+function showCorrectSentence() {
+  const el = document.getElementById('correct-sentence');
+  el.textContent =
+    current.beforeAux +
+    current.auxiliary +
+    current.beforeParticiple +
+    current.participle +
+    current.afterParticiple;
+  el.classList.add('show');
+}
+
+function loadVerb() {
+  if (deck.length === 0) { showEnd(); return; }
+  current  = deck.pop();
+  phase    = 'aux';
+  hadError = false;
+
+  document.getElementById('verb-infinitive').textContent = current.infinitive;
+  document.getElementById('correct-sentence').textContent = '';
+  document.getElementById('correct-sentence').classList.remove('show');
+  document.getElementById('next-btn').classList.remove('visible');
+
+  buildSentence(current);
+}
+
+function nextVerb() { loadVerb(); }
+
+function restartGame() {
+  deck    = shuffle([...VERBS]);
+  correct = 0; wrong = 0; streak = 0; total = 0;
+  updateScore();
+  updateProgress();
+  show('game-screen');
+  loadVerb();
+}
+
+function showEnd() {
+  const pct   = VERBS.length ? Math.round((correct / VERBS.length) * 100) : 0;
+  const msg   = pct === 100 ? 'Ausgezeichnet! Perfekt gemeistert.'
+              : pct >= 80   ? 'Sehr gut! Fast perfekt.'
+              : pct >= 60   ? 'Gut! Weiter üben.'
+              :               'Weitermachen — du schaffst das!';
+
+  document.getElementById('end-score').textContent = correct;
+  document.getElementById('end-total').textContent = 'von ' + VERBS.length + ' Verben';
+  document.getElementById('end-msg').textContent   = msg;
+  show('end-screen');
+}
+
+restartGame();
+</script>
+```

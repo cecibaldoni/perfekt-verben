@@ -1,0 +1,443 @@
+/*-- scss:defaults --*/
+
+// ── Google Fonts ───────────────────────────────────────────────────────────────
+$web-font-path: 'https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@400;500&display=swap';
+
+// ── Palette — warm notebook ────────────────────────────────────────────────────
+$paper:         #f5f0e8;       // warm cream base
+$paper-dark:    #ede8dc;       // slightly darker cream for surfaces
+$paper-darker:  #e0d9cc;       // borders, lines
+$ink:           #2c2416;       // near-black warm ink
+$ink-muted:     #7a6e5f;       // faded ink for secondary text
+$ink-faint:     #b5aa98;       // very faint, for placeholders
+
+$haben:         #c0392b;       // deep red — haben auxiliary
+$sein:          #1a5276;       // deep navy — sein auxiliary
+$correct:       #1e6b3a;       // forest green
+$wrong:         #922b21;       // dark red
+
+$accent-haben:  rgba(192, 57, 43, 0.10);
+$accent-sein:   rgba(26, 82, 118, 0.10);
+$accent-correct:rgba(30, 107, 58, 0.10);
+
+$font-display: 'Lora', serif;
+$font-body:    'Crimson Pro', serif;
+$font-mono:    'DM Mono', monospace;
+
+$radius-sm:   8px;
+$radius-md:   14px;
+$radius-lg:   20px;
+$radius-pill: 999px;
+
+$ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+$ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+
+/*-- scss:rules --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@400;500&display=swap');
+
+// ── Reset ──────────────────────────────────────────────────────────────────────
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+button { border: none; background: none; cursor: pointer; font: inherit; }
+
+:root {
+  --haben: #{$haben};
+  --sein:  #{$sein};
+  --paper: #{$paper};
+}
+
+// ── Body ───────────────────────────────────────────────────────────────────────
+body {
+  font-family: $font-body;
+  background: $paper;
+  color: $ink;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+
+  // Subtle ruled-line texture
+  background-image:
+    repeating-linear-gradient(
+      transparent,
+      transparent 27px,
+      rgba(180, 160, 120, 0.18) 27px,
+      rgba(180, 160, 120, 0.18) 28px
+    );
+  background-size: 100% 28px;
+}
+
+// Remove Quarto chrome
+#quarto-content, .page-layout-full { padding: 0 !important; margin: 0 !important; }
+#quarto-header, .navbar, footer    { display: none !important; }
+
+// ── Screen ─────────────────────────────────────────────────────────────────────
+.screen {
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 20px 60px;
+  overflow-y: auto;
+
+  &.hidden { display: none; }
+}
+
+// ── Header ─────────────────────────────────────────────────────────────────────
+.game-header {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 1.5px solid $paper-darker;
+
+  .game-title {
+    font-family: $font-display;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-style: italic;
+    color: $ink;
+    letter-spacing: 0.5px;
+  }
+
+  .game-subtitle {
+    font-size: 0.75rem;
+    color: $ink-muted;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+// ── Score row ──────────────────────────────────────────────────────────────────
+.scorebar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .score-item {
+    text-align: center;
+
+    .sc-label {
+      font-size: 0.6rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $ink-faint;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .sc-val {
+      font-family: $font-display;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1;
+      display: block;
+
+      &.correct { color: $correct; }
+      &.wrong   { color: $wrong; }
+      &.streak  { color: darken($haben, 5%); }
+    }
+  }
+
+  .score-divider {
+    width: 1px;
+    height: 28px;
+    background: $paper-darker;
+  }
+}
+
+// ── Progress ───────────────────────────────────────────────────────────────────
+.progress-wrap {
+  width: 100%;
+  height: 2px;
+  background: $paper-darker;
+  border-radius: $radius-pill;
+  margin-bottom: 28px;
+  overflow: hidden;
+
+  .progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, $haben, $sein);
+    border-radius: $radius-pill;
+    transition: width 0.5s $ease-out-expo;
+  }
+}
+
+// ── Verb card ──────────────────────────────────────────────────────────────────
+.verb-card {
+  width: 100%;
+  background: $paper-dark;
+  border: 1px solid $paper-darker;
+  border-radius: $radius-lg;
+  padding: 28px 24px 24px;
+  margin-bottom: 20px;
+  position: relative;
+
+  // Corner fold effect
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 0; height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent $paper transparent transparent;
+    border-radius: 0 $radius-lg 0 0;
+  }
+
+  .verb-infinitive {
+    font-family: $font-display;
+    font-size: clamp(1.5rem, 9vw, 2rem);
+    font-weight: 600;
+    font-style: italic;
+    color: $ink;
+    display: block;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+  }
+
+  // ── Sentence assembly ────────────────────────────────────────────────────────
+  .sentence-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 6px;
+    line-height: 1;
+  }
+
+  .sent-text {
+    font-family: $font-body;
+    font-size: 1.3rem;
+    color: $ink;
+    padding-top: 9px;
+    white-space: nowrap;
+  }
+
+  // Stack of choice buttons inline in the sentence
+  .choice-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-shrink: 0;
+  }
+
+  .choice-btn {
+    font-family: $font-mono;
+    font-size: 0.8rem;
+    padding: 5px 12px;
+    border-radius: $radius-sm;
+    border: 1.5px solid $paper-darker;
+    background: $paper;
+    color: $ink-muted;
+    transition: all 0.15s $ease-spring;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+
+    &:hover:not(:disabled) {
+      border-color: $ink-muted;
+      color: $ink;
+      background: $paper-dark;
+    }
+
+    &:active:not(:disabled) { transform: scale(0.95); }
+    &:disabled { cursor: not-allowed; opacity: 0.4; }
+
+    // Haben / sein colours
+    &.type-aux {
+      &.haben-style {
+        border-color: rgba($haben, 0.4);
+        color: $haben;
+        background: $accent-haben;
+      }
+      &.sein-style {
+        border-color: rgba($sein, 0.4);
+        color: $sein;
+        background: $accent-sein;
+      }
+    }
+
+    // Resolved states
+    &.state-correct {
+      border-color: $correct;
+      background: $accent-correct;
+      color: $correct;
+      font-weight: 500;
+    }
+
+    &.state-wrong {
+      border-color: $wrong;
+      color: $wrong;
+      background: rgba($wrong, 0.08);
+      animation: btnShake 0.4s $ease-out-expo;
+    }
+
+    &.state-reveal {
+      border-color: $correct;
+      background: $accent-correct;
+      color: $correct;
+      font-weight: 500;
+    }
+
+    &.state-dim { opacity: 0.25; }
+  }
+
+  // ── Correct sentence reveal ──────────────────────────────────────────────────
+  .correct-sentence {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px dashed $paper-darker;
+    font-family: $font-body;
+    font-size: 1rem;
+    font-style: italic;
+    color: $correct;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    &.show { opacity: 1; }
+  }
+
+  // Shake animation for wrong answers
+  &.shake { animation: cardShake 0.4s $ease-out-expo; }
+
+  @keyframes cardShake {
+    0%,100% { transform: translateX(0); }
+    20% { transform: translateX(-6px); }
+    40% { transform: translateX(6px); }
+    60% { transform: translateX(-4px); }
+    80% { transform: translateX(4px); }
+  }
+
+  @keyframes btnShake {
+    0%,100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+  }
+}
+
+// ── Next button ────────────────────────────────────────────────────────────────
+.next-btn {
+  font-family: $font-body;
+  font-size: 1rem;
+  font-style: italic;
+  color: $ink-muted;
+  padding: 10px 28px;
+  border: 1.5px solid $paper-darker;
+  border-radius: $radius-pill;
+  background: $paper-dark;
+  transition: all 0.2s $ease-spring;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-tap-highlight-color: transparent;
+  letter-spacing: 0.3px;
+
+  &.visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &:hover {
+    border-color: $ink-muted;
+    color: $ink;
+    background: $paper-darker;
+  }
+
+  &:active { transform: scale(0.96); }
+}
+
+// ── End screen ─────────────────────────────────────────────────────────────────
+#end-screen {
+  justify-content: center;
+  text-align: center;
+
+  .end-title {
+    font-family: $font-display;
+    font-size: clamp(2.8rem, 12vw, 4.5rem);
+    font-weight: 600;
+    font-style: italic;
+    color: $ink;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .end-sub {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $ink-faint;
+    margin-bottom: 48px;
+  }
+
+  .end-score {
+    font-family: $font-display;
+    font-size: clamp(4rem, 18vw, 6rem);
+    font-weight: 600;
+    color: $ink;
+    display: block;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .end-total {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $ink-faint;
+    margin-bottom: 10px;
+  }
+
+  .end-msg {
+    font-family: $font-display;
+    font-size: 1.15rem;
+    font-style: italic;
+    color: $ink-muted;
+    margin-bottom: 52px;
+  }
+
+  .end-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .replay-btn {
+    width: 100%;
+    padding: 16px;
+    border-radius: $radius-md;
+    font-family: $font-body;
+    font-size: 1rem;
+    font-style: italic;
+    color: $paper;
+    background: $ink;
+    border: none;
+    transition: opacity 0.2s, transform 0.15s $ease-spring;
+    -webkit-tap-highlight-color: transparent;
+
+    &:hover  { opacity: 0.85; }
+    &:active { transform: scale(0.97); }
+  }
+}
+
+// ── Responsive ─────────────────────────────────────────────────────────────────
+@media (max-width: 380px) {
+  .verb-card {
+    padding: 22px 16px 18px;
+
+    .choice-btn {
+      font-size: 0.72rem;
+      padding: 4px 8px;
+    }
+
+    .sent-text { font-size: 1rem; }
+  }
+}

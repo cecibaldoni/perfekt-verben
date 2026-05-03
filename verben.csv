@@ -1,0 +1,361 @@
+infinitive,auxiliary,participle,wrong_aux,wrong_p1,wrong_p2,before_aux,before_participle,after_participle
+abfahren,ist,abgefahren,hat,abgefahrt,abfährt,Der Zug , um neun Uhr ,.
+abfahren,bin,abgefahren,habe,abgefahrt,abfährt,Ich , gestern früh ,.
+abschließen,hat,abgeschlossen,ist,abschließt,abschlossen,Er , die Tür ,.
+abschließen,habe,abgeschlossen,bin,abschließt,abschlossen,Ich , das Büro ,.
+abtrocknen,hat,abgetrocknet,ist,abtrocknet,abgetrockt,Sie , das Geschirr ,.
+abtrocknen,haben,abgetrocknet,sind,abtrocknet,abgetrockt,Wir , die Teller ,.
+sich ärgern,hat,geärgert,ist,geärgertet,geärgern,Er , sich über den Stau ,.
+sich ärgern,habe,geärgert,bin,geärgertet,geärgern,Ich , mich über die Verspätung ,.
+sich ärgern,haben,geärgert,sind,geärgertet,geärgern,Wir , uns über das Wetter ,.
+sich ändern,hat,geändert,ist,geändertet,geändert,Die Situation , sich sehr ,.
+sich ändern,hast,geändert,bist,geändertet,geändert,Du , dich sehr ,.
+anfangen,hat,angefangen,ist,anfangt,angefangt,Sie , früh mit der Arbeit ,.
+anfangen,habe,angefangen,ist,anfangt,angefangt,Ich , mit dem Lernen ,.
+anrufen,hat,angerufen,ist,angeruftet,anrief,Er , seine Mutter ,.
+anrufen,hast,angerufen,bist,angeruftet,anrief,Du , mich gestern ,.
+anrufen,haben,angerufen,sind,angeruftet,anrief,Wir , euch an ,.
+ankommen,ist,angekommen,hat,angekommt,angekommenen,Der Zug , pünktlich ,.
+ankommen,bin,angekommen,habe,angekommt,angekommenen,Ich , spät ,.
+antworten,hat,geantwortet,ist,antwortet,geantwort,Sie , auf die Frage ,.
+antworten,hast,geantwortet,bist,antwortet,geantwort,Du , nicht ,.
+anmachen,hat,angemacht,ist,angemachtet,anmacht,Er , das Licht ,.
+anmachen,habe,angemacht,bin,angemachtet,anmacht,Ich , den Herd ,.
+anziehen,haben,angezogen,sind,anzieht,angezieht,Sie , sich warm ,.
+anziehen,habe,angezogen,bin,anzieht,angezieht,Ich , mich schnell ,.
+anziehen,hast,angezogen,bist,anzieht,angezieht,Du , dich elegant ,.
+arbeiten,hat,gearbeitet,ist,arbeit,gearbeit,Er , den ganzen Tag ,.
+arbeiten,haben,gearbeitet,sind,arbeit,gearbeit,Wir , bis spät ,.
+aufhören,hat,aufgehört,ist,aufhörtet,aufgehörtet,Sie , mit dem Rauchen ,.
+aufhören,habe,aufgehört,bin,aufhörtet,aufgehörtet,Ich , mit der Arbeit ,.
+aufstehen,ist,aufgestanden,hat,aufsteht,aufgestanden,Er , um sechs Uhr ,.
+aufstehen,bin,aufgestanden,habe,aufsteht,aufgestanden,Ich , sehr früh ,.
+aufstehen,sind,aufgestanden,haben,aufsteht,aufgestanden,Wir , spät ,.
+aufräumen,hat,aufgeräumt,ist,aufräumt,aufgeräumtet,Sie , ihr Zimmer ,.
+aufräumen,hast,aufgeräumt,bist,aufräumt,aufgeräumtet,Du , dein Zimmer ,.
+aufwachen,ist,aufgewacht,hat,aufwacht,aufgewachtet,Er , sehr früh ,.
+aufwachen,bin,aufgewacht,habe,aufwacht,aufgewachtet,Ich , um vier Uhr ,.
+aufmachen,hat,aufgemacht,ist,aufmachtet,aufmacht,Sie , das Fenster ,.
+aufmachen,habe,aufgemacht,bin,aufmachtet,aufmacht,Ich , die Tür ,.
+ausmachen,hat,ausgemacht,ist,ausmachtet,ausgemaket,Er , den Fernseher ,.
+ausmachen,haben,ausgemacht,sind,ausmachtet,ausgemaket,Wir , das Licht ,.
+ausdrucken,hat,ausgedruckt,ist,ausdruckt,ausgedrucktet,Sie , das Dokument ,.
+ausdrucken,habe,ausgedruckt,bin,ausdruckt,ausgedrucktet,Ich , die Rechnung ,.
+ausschalten,hat,ausgeschaltet,ist,ausschaltet,ausgeschalttet,Er , das Licht ,.
+ausschalten,hast,ausgeschaltet,bist,ausschaltet,ausgeschalttet,Du , den Computer ,.
+ausleihen,hat,ausgeliehen,ist,ausliehen,ausgeliehtet,Sie , ein Buch ,.
+ausleihen,habe,ausgeliehen,bin,ausliehen,ausgeliehtet,Ich , mir ein Fahrrad ,.
+auswählen,hat,ausgewählt,ist,auswählt,ausgewähltet,Er , ein Geschenk ,.
+auswählen,habt,ausgewählt,seid,auswählt,ausgewähltet,Ihr, ein Restaurant ,.
+ansehen,hat,angesehen,ist,anseht,angesieht,Sie , den Film ,.
+ansehen,habe,angesehen,bin,anseht,angesieht,Ich , mir das Spiel ,.
+abheben,hat,abgehoben,ist,abhebt,abgehebtet,Er , Geld vom Konto ,.
+abheben,habt,abgehoben,seid,abhebt,abgehebtet,Ihr, Geld ,.
+anprobieren,haben,anprobiert,sind,anprobierten,anprobiertet,Sie , das Kleid ,.
+anprobieren,habe,anprobiert,bin,anprobierten,anprobiertet,Ich , die Jacke ,.
+ausfüllen,hat,ausgefüllt,ist,ausfüllt,ausgefülltet,Er , das Formular ,.
+ausfüllen,hast,ausgefüllt,bist,ausfüllt,ausgefülltet,Du , den Antrag ,.
+bekommen,hat,bekommen,ist,bekommt,bekommtet,Sie , ein Paket ,.
+bekommen,habe,bekommen,bin,bekommt,bekommtet,Ich , einen Brief ,.
+beginnen,hat,begonnen,ist,beginnt,begannt,Er , mit dem Studium ,.
+beginnen,haben,begonnen,sind,beginnt,begannt,Wir , die Besprechung ,.
+bringen,hat,gebracht,ist,bringt,gebringtet,Sie , einen Kuchen ,.
+bringen,habe,gebracht,bin,bringt,gebringtet,Ich , dir ein Geschenk ,.
+backen,hat,gebacken,ist,backt,gebakt,Er , einen Kuchen ,.
+backen,haben,gebacken,sind,backt,gebakt,Wir , Brot ,.
+bieten,hat,geboten,ist,bietet,gebietest,Sie , einen guten Preis ,.
+bieten,habe,geboten,bin,bietet,gebietest,Ich , ihm Hilfe ,.
+brechen,hat,gebrochen,ist,bricht,gebrechtet,Er , sein Versprechen ,.
+brechen,hast,gebrochen,bist,bricht,gebrechtet,Du , die Regel ,.
+bestellen,hat,bestellt,ist,bestelltet,bestell,Sie , einen Kaffee ,.
+bestellen,habe,bestellt,bin,bestelltet,bestell,Ich , ein Bier ,.
+bleiben,ist,geblieben,hat,bleibt,gebliebt,Er , zu Hause ,.
+bleiben,bin,geblieben,habe,bleibt,gebliebt,Ich , lange auf der Party ,.
+bleiben,sind,geblieben,haben,bleibt,gebliebt,Wir , bis Montag ,.
+benutzen,haben,benutzt,sind,benutztet,benutziert,Sie , das Auto ,.
+benutzen,habe,benutzt,bin,benutztet,benutziert,Ich , die App ,.
+beenden,hat,beendet,ist,beendetest,beendt,Er , die Arbeit früh ,.
+beenden,haben,beendet,sind,beendetest,beendt,Wir , das Projekt ,.
+bezahlen,haben,bezahlt,sind,bezahltet,bezahlet,Sie , die Rechnung ,.
+bezahlen,habe,bezahlt,bin,bezahltet,bezahlet,Ich , mit Karte ,.
+brauchen,hat,gebraucht,ist,braucht,gebrauchtet,Er , mehr Zeit ,.
+brauchen,hast,gebraucht,bist,braucht,gebrauchtet,Du , das nicht ,.
+sich beschweren,hat,beschwert,ist,beschwertet,beschwieren,Sie , sich beim Chef ,.
+sich beschweren,habe,beschwert,bin,beschwertet,beschwieren,Ich , mich beim Kellner ,.
+sich beschweren,haben,beschwert,sind,beschwertet,beschwieren,Wir , uns über den Lärm ,.
+sich bedanken,hat,bedankt,ist,bedanktet,bedankiert,Er , sich bei ihr ,.
+sich bedanken,habe,bedankt,bin,bedanktet,bedankiert,Ich , mich bei ihm ,.
+befehlen,haben,befohlen,sind,befiehlt,befehltet,Sie , ihm zu schweigen ,.
+befehlen,hat,befohlen,ist,befiehlt,befehltet,Er , ihr zu warten ,.
+beißen,hat,gebissen,ist,beißt,gebisstet,Der Hund , ihn ,.
+beißen,hat,gebissen,ist,beißt,gebisstet,Die Katze , mich ,.
+bitten,hat,gebeten,ist,bittet,gebitttet,Er , um Hilfe ,.
+bitten,habe,gebeten,bin,bittet,gebitttet,Ich , dich um einen Gefallen ,.
+beobachten,hat,beobachtet,ist,beobachtetest,beobachtiert,Sie , die Vögel ,.
+beobachten,haben,beobachtet,sind,beobachtetest,beobachtiert,Wir , die Lage ,.
+denken,hat,gedacht,ist,denkt,gedenktet,Er , an sie ,.
+denken,habe,gedacht,bin,denkt,gedenktet,Ich , an dich ,.
+denken,hast,gedacht,bist,denkt,gedenktet,Du , daran ,.
+sich duschen,haben,geduscht,sind,duschtet,geduschtet,Sie , sich nach dem Sport ,.
+sich duschen,habe,geduscht,bin,duschtet,geduschtet,Ich , mich kalt ,.
+sich duschen,haben,geduscht,sind,duschtet,geduschtet,Wir , uns schnell ,.
+sich erinnern,hat,erinnert,ist,erinnertet,erinniert,Er , sich an die Reise ,.
+sich erinnern,habe,erinnert,bin,erinnertet,erinniert,Ich , mich nicht daran ,.
+sich erinnern,hast,erinnert,bist,erinnertet,erinniert,Du , dich gut daran ,.
+erzählen,hat,erzählt,ist,erzähltet,erzählet,Sie , eine Geschichte ,.
+erzählen,habe,erzählt,bin,erzähltet,erzählet,Ich , dir alles ,.
+einsteigen,ist,eingestiegen,hat,einsteigt,eingestiegtet,Er , in den Bus ,.
+einsteigen,sind,eingestiegen,haben,einsteigt,eingestiegtet,Wir , in die U-Bahn ,.
+essen,hat,gegessen,ist,isst,geesst,Sie , einen Apfel ,.
+essen,habe,gegessen,sind,isst,geesst,Ich , zu viel ,.
+essen,habe,gegessen,bist,isst,geesst,Du , das gerne ,.
+einkaufen,hat,eingekauft,ist,einkauft,eingekauftet,Er , im Supermarkt ,.
+einkaufen,habe,eingekauft,bist,einkauft,eingekauftet,Ich , für die Woche ,.
+einladen,hat,eingeladen,ist,einlädt,eingeladtet,Sie , ihre Freunde ,.
+einladen,habe,eingeladen,bin,einlädt,eingeladtet,Ich , dich zum Essen ,.
+empfehlen,hat,empfohlen,ist,empfiehlt,empfehltet,Er , ein gutes Restaurant ,.
+empfehlen,hast,empfohlen,bin,empfiehlt,empfehltet,Du , mir das Buch ,.
+sich erkälten,hat,erkältet,ist,erkältetet,erkältiert,Sie , sich im Winter ,.
+sich erkälten,habe,erkältet,bin,erkältetet,erkältiert,Ich , mich letzte Woche ,.
+sich erkälten,hat,erkältet,ist,erkältetet,erkältiert,Er , sich beim Camping ,.
+erfinden,hat,erfunden,ist,erfindet,erfindtet,Er , eine neue Maschine ,.
+erfinden,haben,erfunden,sind,erfindet,erfindtet,Wir , eine Lösung ,.
+erhalten,hat,erhalten,ist,erhält,erhalttet,Sie , einen Brief ,.
+erhalten,habe,erhalten,bin,erhält,erhalttet,Ich , eine Antwort ,.
+sich erschrecken,hat,erschrocken,ist,erschreckt,erschrecktet,Er , sich sehr ,.
+sich erschrecken,habe,erschrocken,bin,erschreckt,erschrecktet,Ich , mich sehr ,.
+sich erschrecken,haben,erschrocken,sind,erschreckt,erschrecktet,Wir , uns im Dunkeln ,.
+einbrechen,ist,eingebrochen,hat,einbricht,eingebrechtet,Ein Dieb , in das Haus ,.
+einbrechen,ist,eingebrochen,hat,einbricht,eingebrechtet,Jemand , in das Büro ,.
+entscheiden,hat,entschieden,ist,entscheidet,entschiedtet,Er , sich schnell ,.
+entscheiden,habe,entschieden,bin,entscheidet,entschiedtet,Ich , mich für das Rote ,.
+entscheiden,haben,entschieden,sind,entscheidet,entschiedtet,Wir , uns gemeinsam ,.
+erleben,haben,erlebt,sind,erlebet,erlebiert,Sie , viel auf der Reise ,.
+erleben,habe,erlebt,bin,erlebet,erlebiert,Ich , etwas Schönes ,.
+eröffnen,hat,eröffnet,ist,eröffnetet,eröffniert,Er , ein neues Café ,.
+eröffnen,haben,eröffnet,sind,eröffnetet,eröffniert,Sie , ein Konto ,.
+erkennen,hat,erkannt,ist,erkennt,erkanntet,Sie , ihn sofort ,.
+erkennen,habe,erkannt,bin,erkennt,erkanntet,Ich , das Problem ,.
+fahren,ist,gefahren,hat,gefahrt,gefährt,Er , nach Berlin ,.
+fahren,bin,gefahren,habe,gefahrt,gefährt,Ich , mit dem Zug ,.
+fahren,sind,gefahren,haben,gefahrt,gefährt,Wir , ans Meer ,.
+fliegen,sind,geflogen,haben,gefliegt,geflogt,Sie , nach London ,.
+fliegen,bin,geflogen,habe,gefliegt,geflogt,Ich , nach Madrid ,.
+fragen,hat,gefragt,ist,fragt,gefragtet,Er , nach dem Weg ,.
+fragen,habe,gefragt,bin,fragt,gefragtet,Ich , dich etwas ,.
+fragen,hast,gefragt,bist,fragt,gefragtet,Du , mich das ,.
+sich freuen,hat,gefreut,ist,freutet,gefreutet,Sie , sich über das Geschenk ,.
+sich freuen,habe,gefreut,bin,freutet,gefreutet,Ich , mich auf den Urlaub ,.
+sich freuen,haben,gefreut,sind,freutet,gefreutet,Wir , uns sehr ,.
+sich föhnen,hat,geföhnt,ist,föhntet,geföhntet,Er , sich die Haare ,.
+sich föhnen,habe,geföhnt,bin,föhntet,geföhntet,Ich , mir die Haare ,.
+fallen,ist,gefallen,hat,fallt,gefallt,Sie , auf der Treppe ,.
+fallen,bin,gefallen,habe,fallt,gefallt,Ich , hin ,.
+fangen,hat,gefangen,ist,fängt,gefangtet,Er , den Ball ,.
+fangen,haben,gefangen,sind,fängt,gefangtet,Wir , einen Fisch ,.
+finden,haben,gefunden,sind,findet,gefindtet,Sie , ihren Schlüssel ,.
+finden,habe,gefunden,bin,findet,gefindtet,Ich , das gut ,.
+finden,hast,gefunden,bist,findet,gefindtet,Du , keinen Platz ,.
+fließen,ist,geflossen,hat,fließt,geflosstet,Das Wasser , schnell ,.
+fließen,ist,geflossen,hat,fließt,geflosstet,Der Fluss , ins Meer ,.
+fressen,hat,gefressen,ist,frisst,gefresstet,Die Katze , die Maus ,.
+fressen,hat,gefressen,ist,frisst,gefresstet,Der Hund , alles ,.
+feiern,haben,gefeiert,sind,feiert,gefeiertet,Sie , ihren Geburtstag ,.
+feiern,haben,gefeiert,sind,feiert,gefeiertet,Wir , bis spät ,.
+feiern,habe,gefeiert,bin,feiert,gefeiertet,Ich , mit Freunden ,.
+folgen,ist,gefolgt,hat,folgt,gefolgtet,Er , dem Weg ,.
+folgen,bin,gefolgt,habe,folgt,gefolgtet,Ich , dir auf Instagram ,.
+geben,hat,gegeben,ist,gibt,gegebtet,Sie , ihm das Buch ,.
+geben,habe,gegeben,bin,gibt,gegebtet,Ich , dir meine Nummer ,.
+geben,habe,gegeben,bist,gibt,gegebtet,Du , mir Feedback ,.
+gehen,ist,gegangen,hat,geht,gegangtet,Er , in die Schule ,.
+gehen,bin,gegangen,habe,geht,gegangtet,Ich , nach Hause ,.
+gehen,sind,gegangen,haben,geht,gegangtet,Wir , ins Kino ,.
+gewinnen,hat,gewonnen,ist,gewinnt,gewanntet,Sie , das Spiel ,.
+gewinnen,haben,gewonnen,sind,gewinnt,gewanntet,Wir , das Turnier ,.
+gewinnen,habe,gewonnen,bin,gewinnt,gewanntet,Ich , den ersten Preis ,.
+gefallen,hat,gefallen,ist,gefällt,gefalltet,Das Kleid , ihr sehr ,.
+gefallen,hat,gefallen,ist,gefällt,gefalltet,Der Film , mir gut ,.
+gießen,hat,gegossen,ist,gießt,gegosstet,Er , die Blumen ,.
+gießen,habe,gegossen,bin,gießt,gegosstet,Ich , die Pflanzen ,.
+graben,haben,gegraben,sind,gräbt,gegrabtet,Sie , ein Loch im Garten ,.
+greifen,hat,gegriffen,ist,greift,gegrifftet,Er , nach dem Glas ,.
+greifen,habe,gegriffen,bin,greift,gegrifftet,Ich , nach seiner Hand ,.
+gelten,hat,gegolten,ist,gilt,gegolttet,Diese Regel , für alle ,.
+gehören,hat,gehört,ist,gehörtet,gehöriert,Das Buch , ihr ,.
+gehören,hat,gehört,ist,gehörtet,gehöriert,Das , mir ,.
+gründen,hat,gegründet,ist,gründet,gegründtet,Er , eine Firma ,.
+gründen,haben,gegründet,sind,gründet,gegründtet,Wir , einen Verein ,.
+haben,haben,gehabt,sind,hat,gehabtet,Sie , Hunger ,.
+haben,habe,gehabt,bin,hat,gehabtet,Ich , keine Zeit ,.
+haben,hast,gehabt,bist,hat,gehabtet,Du , Glück ,.
+halten,hat,gehalten,ist,hält,gehalttet,Der Bus , an der Haltestelle ,.
+halten,habe,gehalten,bin,hält,gehalttet,Ich , eine Rede ,.
+hängen,hat,gehängt,ist,hängt,gehängtet,Er , das Bild an die Wand ,.
+hängen,hast,gehängt,bist,hängt,gehängtet,Ich , die Jacke auf ,.
+heben,hat,gehoben,ist,hebt,gehobtet,Sie , das schwere Paket ,.
+heben,haben,gehoben,sind,hebt,gehobtet,Wir , das Sofa ,.
+helfen,haben,geholfen,sind,hilft,geholftet,Sie , ihm beim Umzug ,.
+helfen,habe,geholfen,bin,hilft,geholftet,Ich , dir gerne ,.
+helfen,hast,geholfen,bist,hilft,geholftet,Du , mir sehr ,.
+heiraten,hat,geheiratet,ist,heiratet,geheirattet,Er , seine Jugendliebe ,.
+heiraten,haben,geheiratet,sind,heiratet,geheirattet,Wir , im Sommer ,.
+herstellen,hat,hergestellt,ist,herstellt,hergestelltet,Sie , das Produkt ,.
+herstellen,haben,hergestellt,sind,herstellt,hergestelltet,Wir , alles selbst ,.
+jagen,hat,gejagt,ist,jagt,gejagtet,Er , den Einbrecher ,.
+jagen,hat,gejagt,ist,jagt,gejagtet,Die Katze , die Maus ,.
+kennen,hat,gekannt,ist,kennt,gekanntet,Sie , ihn seit Jahren ,.
+kennen,habe,gekannt,bin,kennt,gekanntet,Ich , dich gut ,.
+kennen,hast,gekannt,bist,kennt,gekanntet,Du , diese Stadt ,.
+klingen,hat,geklungen,ist,klingt,geklungtet,Das , sehr gut ,.
+klingen,hat,geklungen,ist,klingt,geklungtet,Die Musik , schön ,.
+kommen,ist,gekommen,hat,kommt,gekommtet,Er , aus München ,.
+kommen,bin,gekommen,habe,kommt,gekommtet,Ich , zu spät ,.
+kommen,sind,gekommen,haben,kommt,gekommtet,Wir , gestern an ,.
+kochen,hat,gekocht,ist,kocht,gekochtet,Sie , eine Suppe ,.
+kochen,habe,gekocht,bin,kocht,gekochtet,Ich , Pasta ,.
+kochen,hast,gekocht,bist,kocht,gekochtet,Du , sehr gut ,.
+kommunizieren,hat,kommuniziert,ist,kommunizieret,kommuniziert,Er , klar mit dem Team ,.
+kommunizieren,haben,kommuniziert,sind,kommunizieret,kommuniziert,Wir , auf Englisch ,.
+kosten,hat,gekostet,ist,kostet,kosttet,Das , zehn Euro ,.
+kosten,hat,gekostet,ist,kostet,kosttet,Das Ticket , viel ,.
+laden,hat,geladen,ist,lädt,geladtet,Er , die Dateien hoch ,.
+laden,habe,geladen,bin,lädt,geladtet,Ich , das Foto hoch ,.
+lassen,haben,gelassen,sind,lässt,gelasstet,Sie , ihn in Ruhe ,.
+lassen,habe,gelassen,bin,lässt,gelasstet,Ich , das sein ,.
+laufen,ist,gelaufen,hat,läuft,gelauftet,Er , durch den Park ,.
+laufen,bin,gelaufen,habe,läuft,gelauftet,Ich , fünf Kilometer ,.
+laufen,sind,gelaufen,haben,läuft,gelauftet,Wir , zur Schule ,.
+leiden,hat,gelitten,ist,leidet,gelitttet,Sie , an Kopfschmerzen ,.
+leiden,habe,gelitten,bin,leidet,gelitttet,Ich , unter dem Stress ,.
+leihen,hat,geliehen,ist,leiht,geliehentet,Er , ihr sein Fahrrad ,.
+leihen,habe,geliehen,bin,leiht,geliehentet,Ich , mir ein Buch ,.
+lesen,hat,gelesen,ist,liest,gelestet,Sie , das Buch ,.
+lesen,habe,gelesen,bin,liest,gelestet,Ich , die Zeitung ,.
+lesen,hast,gelesen,bist,liest,gelestet,Du , viel ,.
+liegen,hat,gelegen,ist,liegt,gelegentet,Er , auf dem Sofa ,.
+liegen,habe,gelegen,bin,liegt,gelegentet,Ich , lange im Bett ,.
+lachen,hat,gelacht,ist,lacht,gelachtet,Sie , laut ,.
+lachen,habt,gelacht,seid,lacht,gelachtet,Ihr, viel ,.
+lachen,habe,gelacht,bin,lacht,gelachtet,Ich , über den Witz ,.
+lernen,hat,gelernt,ist,lernt,gelerntet,Er , viele neue Wörter ,.
+lernen,habe,gelernt,bin,lernt,gelerntet,Ich , Deutsch ,.
+lernen,hast,gelernt,bist,lernt,gelerntet,Du , sehr fleißig ,.
+lieben,hat,geliebt,ist,liebt,geliebtet,Sie , ihn sehr ,.
+lieben,habe,geliebt,bin,liebt,geliebtet,Ich , dich ,.
+lügen,hat,gelogen,ist,lügt,gelogentet,Er , mich an ,.
+lügen,hast,gelogen,bist,lügt,gelogentet,Du , mich an ,.
+machen,haben,gemacht,sind,macht,gemachtet,Sie , ihre Hausaufgaben ,.
+machen,habe,gemacht,bin,macht,gemachtet,Ich , einen Fehler ,.
+machen,haben,gemacht,sind,macht,gemachtet,Wir , eine Pause ,.
+nehmen,hat,genommen,ist,nimmt,genommtet,Er , den Bus ,.
+nehmen,habe,genommen,bin,nimmt,genommtet,Ich , die U-Bahn ,.
+nehmen,hast,genommen,bist,nimmt,genommtet,Du , das Falsche ,.
+nennen,haben,genannt,sind,nennt,genanntet,Sie , ihn beim Namen ,.
+nennen,habe,genannt,bin,nennt,genanntet,Ich , das unfair ,.
+nutzen,hat,genutzt,ist,nutzt,genutztet,Er , die Gelegenheit ,.
+nutzen,habe,genutzt,bin,nutzt,genutztet,Ich , die App täglich ,.
+passieren,ist,passiert,hat,passieret,passierten,Etwas Seltsames , auf der Straße ,.
+passieren,ist,passiert,hat,passieret,passierten,Das , mir noch nie ,.
+prüfen,haben,geprüft,sind,prüft,geprüftet,Sie , die Antworten ,.
+prüfen,habe,geprüft,bin,prüft,geprüftet,Ich , die Rechnung ,.
+planen,hat,geplant,ist,plant,geplantet,Er , die Reise ,.
+planen,haben,geplant,sind,plant,geplantet,Wir , die Hochzeit ,.
+reisen,ist,gereist,hat,reist,gereistet,Sie , durch Europa ,.
+reisen,bin,gereist,habe,reist,gereistet,Ich , alleine ,.
+reparieren,hat,repariert,ist,reparieret,repariert,Er , das Auto ,.
+reparieren,habe,repariert,bin,reparieret,repariert,Ich , das Fahrrad ,.
+reden,hat,geredet,ist,redet,geredtet,Sie , mit ihm ,.
+reden,haben,geredet,sind,redet,geredtet,Wir , lange ,.
+reden,habe,geredet,bin,redet,geredtet,Ich , mit dir ,.
+reservieren,hat,reserviert,ist,reservieret,reserviert,Er , einen Tisch ,.
+reservieren,habe,reserviert,bin,reservieret,reserviert,Ich , ein Zimmer ,.
+riechen,hat,gerochen,ist,riecht,gerochtet,Sie , die Blumen ,.
+riechen,habe,gerochen,bin,riecht,gerochtet,Ich , das Essen ,.
+schreiben,hat,geschrieben,ist,schreibt,geschriebtet,Er , einen Brief ,.
+schreiben,habe,geschrieben,bin,schreibt,geschriebtet,Ich , dir eine Nachricht ,.
+schreiben,hast,geschrieben,bist,schreibt,geschriebtet,Du , mir nicht ,.
+spielen,haben,gespielt,sind,spielt,gespieltet,Sie , Fußball ,.
+spielen,habe,gespielt,bist,spielt,gespieltet,Ich , Gitarre ,.
+spielen,haben,gespielt,sind,spielt,gespieltet,Wir , Karten ,.
+sagen,hat,gesagt,ist,sagt,gesagtet,Er , die Wahrheit ,.
+sagen,habe,gesagt,bin,sagt,gesagtet,Ich , nichts ,.
+sagen,hast,gesagt,bist,sagt,gesagtet,Du , das falsch ,.
+senden,habt,gesendet,seid,sendet,gesendtet,Ihr, eine E-Mail ,.
+senden,habe,gesendet,bin,sendet,gesendtet,Ich , dir die Datei ,.
+schenken,hat,geschenkt,ist,schenkt,geschenktet,Er , ihr Blumen ,.
+schenken,habe,geschenkt,bin,schenkt,geschenktet,Ich , dir etwas ,.
+spenden,hat,gespendet,ist,spendet,gespendtet,Sie , Geld ,.
+spenden,haben,gespendet,sind,spendet,gespendtet,Wir , Kleidung ,.
+spazieren gehen,ist,spazieren gegangen,hat,spazieren gegangt,spaziert gegangen,Er , im Park ,.
+spazieren gehen,sind,spazieren gegangen,haben,spazieren gegangt,spaziert gegangen,Wir , am See ,.
+spazieren gehen,bin,spazieren gegangen,habe,spazieren gegangt,spaziert gegangen,Ich , mit dem Hund ,.
+sehen,haben,gesehen,sind,sieht,gesehtet,Sie , den Film ,.
+sehen,habe,gesehen,bin,sieht,gesehtet,Ich , dich gestern ,.
+sehen,hast,gesehen,bist,sieht,gesehtet,Du , das nicht ,.
+sterben,ist,gestorben,hat,stirbt,gestorbtet,Er , letztes Jahr ,.
+sterben,sind,gestorben,haben,stirbt,gestorbtet,Die Pflanzen, leider ,.
+sinken,ist,gesunken,hat,sinkt,gesunktet,Das Schiff , im Sturm ,.
+sinken,ist,gesunken,hat,sinkt,gesunktet,Die Temperatur , stark ,.
+stehlen,hat,gestohlen,ist,stiehlt,gestohlentet,Er , das Geld ,.
+stehlen,hat,gestohlen,ist,stiehlt,gestohlentet,Jemand , mein Fahrrad ,.
+sparen,haben,gespart,sind,spart,gespartet,Sie , für den Urlaub ,.
+sparen,habe,gespart,bin,spart,gespartet,Ich , jeden Monat ,.
+schmecken,hat,geschmeckt,ist,schmeckt,geschmecktet,Das Essen , sehr gut ,.
+schmecken,hat,geschmeckt,ist,schmeckt,geschmecktet,Der Kuchen , mir gut ,.
+suchen,hat,gesucht,ist,sucht,gesuchtet,Er , seinen Schlüssel ,.
+suchen,habe,gesucht,bin,sucht,gesuchtet,Ich , eine Wohnung ,.
+suchen,haben,gesucht,sind,sucht,gesuchtet,Wir , einen Babysitter ,.
+trinken,hat,getrunken,ist,trinkt,getrunktet,Sie , einen Kaffee ,.
+trinken,habe,getrunken,bin,trinkt,getrunktet,Ich , Wasser ,.
+trinken,hast,getrunken,bist,trinkt,getrunktet,Du , zu viel ,.
+treiben,hat,getrieben,ist,treibt,getriebtet,Er , viel Sport ,.
+treiben,haben,getrieben,sind,treibt,getriebtet,Wir , es zu weit ,.
+tun,haben,getan,sind,tut,getantet,Sie , ihr Bestes ,.
+tun,habe,getan,bin,tut,getantet,Ich , das nicht ,.
+tun,hast,getan,bist,tut,getantet,Du , mir leid ,.
+testen,hat,getestet,ist,testet,getesttet,Er , das neue Produkt ,.
+testen,haben,getestet,sind,testet,getesttet,Wir , die App ,.
+teilen,haben,geteilt,sind,teilt,geteiltet,Sie , das Essen mit ihm ,.
+teilen,habe,geteilt,bin,teilt,geteiltet,Ich , den Artikel ,.
+sich umziehen,hat,umgezogen,ist,umzieht,umgeziehentet,Er , sich nach der Arbeit ,.
+sich umziehen,habe,umgezogen,bin,umzieht,umgeziehentet,Ich , mich schnell ,.
+sich umziehen,haben,umgezogen,sind,umzieht,umgeziehentet,Wir , uns für die Party ,.
+sich unterhalten,hat,unterhalten,ist,unterhält,unterhaltet,Sie , sich mit ihm ,.
+sich unterhalten,haben,unterhalten,sind,unterhält,unterhaltet,Wir , uns lange ,.
+sich unterhalten,habe,unterhalten,bin,unterhält,unterhaltet,Ich , mich mit ihr ,.
+unterrichten,hat,unterrichtet,ist,unterrichtetest,unterrichtiert,Er , Mathematik ,.
+unterrichten,haben,unterrichtet,sind,unterrichtetest,unterrichtiert,Sie , uns Deutsch ,.
+überweisen,haben,überwiesen,sind,überweist,überwiestet,Sie , das Geld ,.
+überweisen,habe,überwiesen,bin,überweist,überwiestet,Ich , die Miete ,.
+verlieren,hat,verloren,ist,verliert,verlorentet,Er , seinen Schlüssel ,.
+verlieren,habe,verloren,bin,verliert,verlorentet,Ich , mein Handy ,.
+verlieren,haben,verloren,sind,verliert,verlorentet,Wir , das Spiel ,.
+verkaufen,hat,verkauft,ist,verkauft,verkauftet,Sie , ihr Auto ,.
+verkaufen,habe,verkauft,bin,verkauft,verkauftet,Ich , mein Fahrrad ,.
+verdienen,hat,verdient,ist,verdienet,verdient,Er , gut ,.
+verdienen,hast,verdient,bist,verdienet,verdient,Du , mehr als ich ,.
+verspielen,haben,verspielt,sind,verspielt,verspieltet,Sie , das Geld ,.
+verspielen,hat,verspielt,ist,verspielt,verspieltet,Er , seine Chance ,.
+verbringen,hat,verbracht,ist,verbringt,verbrachtet,Er , den Sommer in Italien ,.
+verbringen,habe,verbracht,bin,verbringt,verbrachtet,Ich , den Abend alleine ,.
+verbringen,haben,verbracht,sind,verbringt,verbrachtet,Wir , viel Zeit zusammen ,.
+verhaften,hat,verhaftet,ist,verhaftetest,verhaftiert,Die Polizei , ihn ,.
+verhören,haben,verhört,sind,verhöret,verhöriert,Sie , den Verdächtigen ,.
+verhören,hat,verhört,ist,verhöret,verhöriert,Die Polizei , ihn stundenlang ,.
+verschwinden,ist,verschwunden,hat,verschwindet,verschwundtet,Er , plötzlich ,.
+verschwinden,ist,verschwunden,hat,verschwindet,verschwundtet,Mein Schlüssel , wieder ,.
+wechseln,hat,gewechselt,ist,wechselt,gewechseltet,Sie , die Stelle ,.
+wechseln,habe,gewechselt,bin,wechselt,gewechseltet,Ich , das Thema ,.
+wechseln,haben,gewechselt,sind,wechselt,gewechseltet,Wir , die Wohnung ,.
+warten,hat,gewartet,ist,wartet,gewartetest,Er , auf den Bus ,.
+warten,habe,gewartet,bin,wartet,gewartetest,Ich , lange auf dich ,.
+warten,haben,gewartet,sind,wartet,gewartetest,Wir , eine Stunde ,.
+waschen,hat,gewaschen,ist,wäscht,gewaschtet,Sie , die Wäsche ,.
+waschen,habe,gewaschen,bin,wäscht,gewaschtet,Ich , mir die Hände ,.
+waschen,hast,gewaschen,bist,wäscht,gewaschtet,Du , das Auto ,.
+wahrnehmen,hat,wahrgenommen,ist,wahrnimmt,wahrgenommtet,Er , die Veränderung ,.
+wahrnehmen,habe,wahrgenommen,bin,wahrnimmt,wahrgenommtet,Ich , das kaum ,.
+wohnen,hat,gewohnt,ist,wohnt,gewohntet,Sie , in Hamburg ,.
+wohnen,habe,gewohnt,bin,wohnt,gewohntet,Ich , in Berlin ,.
+wohnen,haben,gewohnt,sind,wohnt,gewohntet,Wir , zusammen ,.
